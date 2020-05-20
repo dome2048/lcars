@@ -2,10 +2,6 @@ These are template SVG files for use with openHAB's HABPanel interface. They are
 
 They are still very much a work in progress. I'm making them available now upon request.
 
-Here's an (old) video of the graphics in use:
-
-https://vimeo.com/388384377
-
 While I may someday make them into a universally functional demo, they are currently optimized for my home and won't be useful to others without heavy modification.
 
 The 3DIN is a tablet designed for my dining room. It's designed to be general purpose, with a display for security cameras, a map with a security overview, basic weather info, and scene shortcuts.
