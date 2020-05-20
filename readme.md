@@ -8,6 +8,8 @@ The 3DIN is a tablet designed for my dining room. It's designed to be general pu
 
 The other three are all located at the same desk location. Left and right sit on either side of my main computer setup. Left is set up as a system overview, with weather and a map. On the right is a frame based panel, which allows me to display cameras, logs, BasicUI, PaperUI, or any other web based application in a frame. The Panel version runs on a Raspberry Pi touchscreen and is designed to be the only one of the three that is frequently interacted with directly (as opposed to being optimized for viewing). It has several "pages" of controls that are shown or hidden based on a String item, and allows control of the right display (as explained above), direct device control, scene selections, audio control, and an alert condition section.
 
+To make sense of the office panel SVG, I recommend hiding all of the control layers except the one you want to view. Otherwise it's unintelligible.
+
 For fun, most elements respond to a change in the relevant Condition string item to display animations for Red Alert, Yellow Alert, and Blue Alert. I took some artistic license with exactly how the items were rendered. I noticed that in later shows, more and more of the elements would change colors to reflect the alert status and I thought that looked great, so I'm aiming to have as many elements react to the alerts as possible.
 
 The files are created (and best viewed and edited with) Inkscape. I used Mac OS version 0.92.2. 
@@ -15,7 +17,6 @@ The files are created (and best viewed and edited with) Inkscape. I used Mac OS 
 For use, I recommend compressing them using SVGO: https://jakearchibald.github.io/svgomg/
 
 I also recommend using the filtered version of HABPanel: https://community.openhab.org/t/solved-habpanel-sluggish/81756/27
-
 
 Requires Swiss911 Font, not included. Some devices don't support installation of fonts, so for those devices I changed the relevant text items to paths using Inkscape.
 
