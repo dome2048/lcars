@@ -1,0 +1,678 @@
+/* Animation */
+@keyframes rotation{from{transform: rotate(0deg)}to{transform: rotate(359deg)}}
+@keyframes rotate90{100%{transform: rotate(90deg)}}
+@keyframes rotateReset90{0%{transform: rotate(90deg)}100%{transform: none}}
+@keyframes rotate-90{100%{transform: rotate(-90deg)}}
+@keyframes rotateReset-90{0%{transform: rotate(-90deg)}100%{transform: none}}
+@keyframes fadeInAndOut{0%{opacity: 0}50%{opacity: 1}100%{opacity: 0}}
+@keyframes fadeInAndOut25{0%{opacity: 0.25}50%{opacity: 1}100%{opacity: 0.25}}
+@keyframes fadeOut25	{	0%{opacity: 1}		100%{opacity: 0.25}	}
+@keyframes fadeInAndOut50{	0%{opacity: 0.50}	50%{opacity: 1}	100%{opacity: 0.50}	}
+@keyframes slightFade{0%{opacity: 0.6}50%{opacity: 1}100%{opacity: 0.6}}
+@keyframes fadeIn{0%{opacity: 0}100%{opacity: 1}}
+@keyframes fadeOut{0%{opacity: 1}100%{opacity: 0}}
+
+@keyframes flashRedWhite{0%{fill: #FF0000;opacity: 0.5}45%{fill: #FF0000;opacity: 1}46%{fill: #FFFFFF;opacity: 1}53%{fill: #FFFFFF;opacity: 1}54%{fill: #FF0000;opacity: 1}100%{fill: #FF0000;opacity: 0.5}}
+@keyframes flashYellowWhite{0%{fill: #FFFF66;opacity: 0.5}45%{fill: #FFFF66;opacity: 1}46%{fill: #FFFFFF;opacity: 1}53%{fill: #FFFFFF;opacity: 1}54%{fill: #FFFF66;opacity: 1}100%{fill: #FFFF66;opacity: 0.5}}
+@keyframes flashBlueWhite{0%{fill: #0000FF;opacity: 0.5}45%{fill: #0000FF;opacity: 1}46%{fill: #FFFFFF;opacity: 1}53%{fill: #FFFFFF;opacity: 1}54%{fill: #0000FF;opacity: 1}100%{fill: #0000FF;opacity: 0.5}}
+
+
+@keyframes redAlertBar {
+0% 		{fill: #000000;}
+49% 	{fill: #000000;}
+50% 	{fill: #FF0000;}
+100% 	{fill: #FF0000;}
+}
+
+@keyframes alternateRedWhite {
+	0% 		{fill: #FFFFFF;}
+	50% 	{fill: #FFFFFF;}
+	51% 	{fill: #FF0000;}
+	100% 	{fill: #FF0000;}
+	}
+
+@keyframes alternateBlueWhite {
+	0% 		{fill: #FFFFFF;}
+	50% 	{fill: #FFFFFF;}
+	51% 	{fill: #0000FF;}
+	100% 	{fill: #0000FF;}
+}
+
+@keyframes alternateYellowWhite {
+	0% 		{fill: #FFFFFF;}
+	50% 	{fill: #FFFFFF;}
+	51% 	{fill: rgb(255, 200, 100);}
+	100% 	{fill: rgb(255, 200, 100);}
+}
+
+@keyframes alternatePurpleOrange {
+	0% 		{fill: #9999FF;}
+	50% 	{fill: #9999FF;}
+	51% 	{fill: #FF9900;}
+	100% 	{fill: #FF9900;}
+	}
+
+@keyframes alertPolygon1 {
+1% 		{opacity:1;}
+2% 		{opacity:1;}
+99% 	{opacity:0;}
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon2 {
+0% 		{opacity:0;}
+20% 	{opacity:0;}
+21% 	{opacity:1;}
+40% 	{opacity:1;}
+41% 	{opacity:0;}
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon3 {
+0% 		{opacity:0;}
+40% 	{opacity:0;}
+41% 	{opacity:1;}
+60% 	{opacity:1;}
+61% 	{opacity:0;}
+100% 	{opacity:0;}
+}
+/*
+@keyframes alertPolygon1D {
+0% 		{opacity:0;}
+60% 	{opacity:0;}
+61% 	{opacity:1;}
+80% 	{opacity:1;}
+81% 	{opacity:0;}
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon1E {
+0% 		{opacity:0;}
+80% 	{opacity:0;}
+81% 	{opacity:1;}
+100% 	{opacity:1;}
+}
+
+@keyframes alertPolygon2A {
+0% 		{opacity:1;}
+60% 	{opacity:1;}
+61% 	{opacity:0;}
+100% 	{opacity:0;}
+}      
+
+@keyframes alertPolygon2B {
+0% 		{opacity:0;}
+60% 	{opacity:0;}
+61% 	{opacity:1;}
+80% 	{opacity:1;}
+81% 	{opacity:0;}                            
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon2C {
+0% 		{opacity:0;}
+80% 	{opacity:0;}
+81% 	{opacity:1;}
+100% 	{ opacity:1;}
+}
+*/
+/*
+@keyframes alertPolygon1A {
+0% 		{opacity:1;}
+20% 	{opacity:1;}
+21% 	{opacity:0;}
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon1B {
+0% 		{opacity:0;}
+20% 	{opacity:0;}
+21% 	{opacity:1;}
+40% 	{opacity:1;}
+41% 	{opacity:0;}
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon1C {
+0% 		{opacity:0;}
+40% 	{opacity:0;}
+41% 	{opacity:1;}
+60% 	{opacity:1;}
+61% 	{opacity:0;}
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon1D {
+0% 		{opacity:0;}
+60% 	{opacity:0;}
+61% 	{opacity:1;}
+80% 	{opacity:1;}
+81% 	{opacity:0;}
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon1E {
+0% 		{opacity:0;}
+80% 	{opacity:0;}
+81% 	{opacity:1;}
+100% 	{opacity:1;}
+}
+
+@keyframes alertPolygon2A {
+0% 		{opacity:1;}
+60% 	{opacity:1;}
+61% 	{opacity:0;}
+100% 	{opacity:0;}
+}      
+
+@keyframes alertPolygon2B {
+0% 		{opacity:0;}
+60% 	{opacity:0;}
+61% 	{opacity:1;}
+80% 	{opacity:1;}
+81% 	{opacity:0;}                            
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon2C {
+0% 		{opacity:0;}
+80% 	{opacity:0;}
+81% 	{opacity:1;}
+100% 	{ opacity:1;}
+}
+*/
+@keyframes alertPolygon1A {
+0% 		{opacity:1;}
+20% 	{opacity:1;}
+21% 	{opacity:0;}
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon1B {
+0% 		{opacity:0;}
+20% 	{opacity:0;}
+21% 	{opacity:1;}
+40% 	{opacity:1;}
+41% 	{opacity:0;}
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon1C {
+0% 		{opacity:0;}
+40% 	{opacity:0;}
+41% 	{opacity:1;}
+60% 	{opacity:1;}
+61% 	{opacity:0;}
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon1D {
+0% 		{opacity:0;}
+60% 	{opacity:0;}
+61% 	{opacity:1;}
+80% 	{opacity:1;}
+81% 	{opacity:0;}
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon1E {
+0% 		{opacity:0;}
+80% 	{opacity:0;}
+81% 	{opacity:1;}
+100% 	{opacity:1;}
+}
+
+@keyframes alertPolygon2A {
+0% 		{opacity:1;}
+60% 	{opacity:1;}
+61% 	{opacity:0;}
+100% 	{opacity:0;}
+}      
+
+@keyframes alertPolygon2B {
+0% 		{opacity:0;}
+60% 	{opacity:0;}
+61% 	{opacity:1;}
+80% 	{opacity:1;}
+81% 	{opacity:0;}                            
+100% 	{opacity:0;}
+}
+
+@keyframes alertPolygon2C {
+0% 		{opacity:0;}
+80% 	{opacity:0;}
+81% 	{opacity:1;}
+100% 	{ opacity:1;}
+}
+	
+
+
+@keyframes redAlertPolygon1A {
+0% 		{fill: #FFFFFF;}
+20% 	{fill: #FFFFFF;}
+20.1% 	{fill: #FF0000;}
+100% 	{fill: #FF0000;}
+}
+
+@keyframes redAlertPolygon1B {
+0% 		{fill: #FF0000;}
+20% 	{fill: #FF0000;}
+20.1% 	{fill: #FFFFFF;}
+40% 	{fill: #FFFFFF;}
+40.1% 	{fill: #FF0000;}
+100% 	{fill: #FF0000;}
+}
+
+@keyframes redAlertPolygon1C {
+0% 		{fill: #FF0000;}
+40% 	{fill: #FF0000;}
+40.1% 	{fill: #FFFFFF;}
+60% 	{fill: #FFFFFF;}
+60.1% 	{fill: #FF0000;}
+100% 	{fill: #FF0000;}
+}
+
+@keyframes redAlertPolygon1D {
+0% 		{fill: #FF0000;}
+60% 	{fill: #FF0000;}
+60.1% 	{fill: #FFFFFF;}
+80% 	{fill: #FFFFFF;}
+80.1% 	{fill: #FF0000;}
+100% 	{fill: #FF0000;}
+}
+
+@keyframes redAlertPolygon1E {
+0% 		{fill: #FF0000;}
+80% 	{fill: #FF0000;}
+80.1% 	{fill: #FFFFFF;}
+100% 	{fill: #FFFFFF;}
+}
+
+@keyframes redAlertPolygon2A {
+0% 		{fill: #FFFFFF;}
+60% 	{fill: #FFFFFF;}
+60.1% 	{fill: #FF0000;}
+100% 	{fill: #FF0000;}
+}      
+
+@keyframes redAlertPolygon2B {
+0% 		{fill: #FF0000;}
+60% 	{fill: #FF0000;}
+60.1% 	{fill: #FFFFFF;}
+80% 	{fill: #FFFFFF;}
+80.1% 	{fill: #FF0000;}                            
+100% 	{fill: #FF0000;}
+}
+
+@keyframes redAlertPolygon2C {
+0% 		{fill: #FF0000;}
+80% 	{fill: #FF0000;}
+80.1% 	{fill: #FFFFFF;}
+100% 	{ fill: #FFFFFF;}
+}
+
+@keyframes blueAlertPolygon1A {
+    0% 		{ fill: #FFFFFF; }
+    19% 	{ fill: #FFFFFF; }
+    20% 	{ fill: #0000FF; }
+    100% 	{ fill: #0000FF;}
+    }
+    
+@keyframes blueAlertPolygon1B {
+    0% 		{ fill: #0000FF; }
+    19% 	{ fill: #0000FF; }
+    20% 	{ fill: #FFFFFF; }
+    39% 	{ fill: #FFFFFF; }
+    40% 	{ fill: #0000FF; }
+    100% 	{ fill: #0000FF; }
+    }
+    
+@keyframes blueAlertPolygon1C {
+    0% 		{ fill: #0000FF; }
+    39% 	{ fill: #0000FF; }    
+    40% 	{ fill: #FFFFFF; }
+    59% 	{ fill: #FFFFFF; }
+    60% 	{ fill: #0000FF; }
+	100% 	{ fill: #0000FF; }
+    }
+    
+@keyframes blueAlertPolygon1D {
+    0% 		{ fill: #0000FF; }
+    59% 	{ fill: #0000FF; }    
+    60% 	{ fill: #FFFFFF; }
+    79% 	{ fill: #FFFFFF; }
+	80% 	{ fill: #0000FF; }
+    100% 	{ fill: #0000FF; }
+    }
+    
+@keyframes blueAlertPolygon1E {
+    0% 		{ fill: #0000FF; }
+    79% 	{ fill: #0000FF; }
+	80% 	{ fill: #FFFFFF; }
+    100% 	{ fill: #FFFFFF;}
+	}
+	
+@keyframes blueAlertPolygon2A {
+    0% 		{ fill: #FFFFFF; }
+    59% 	{ fill: #FFFFFF; }
+	60% 	{ fill: #0000FF; } 
+	100% 	{ fill: #0000FF; }
+    }      
+    
+@keyframes blueAlertPolygon2B {
+    0% 		{ fill: #0000FF; }
+	59% 	{ fill: #0000FF; }
+    60% 	{ fill: #FFFFFF;}
+	79% 	{ fill: #FFFFFF; }
+    80% 	{ fill: #0000FF; }                            
+    100% 	{ fill: #0000FF; }
+    }
+    
+@keyframes blueAlertPolygon2C {
+    0% 		{ fill: #0000FF; }
+    79% 	{ fill: #0000FF; }
+    80% 	{ fill: #FFFFFF; }
+    100% 	{ fill: #FFFFFF; }
+}
+
+
+	
+
+@keyframes partyModePolygon1 {
+	0% 		{ fill: #00FF00; }
+	24.9% 	{ fill: #00FF00; }
+	25% 	{ fill: #FF0000; }
+	49.9% 	{ fill: #FF0000; }
+	50% 	{ fill: #E3C800; }
+	74.9% 	{ fill: #E3C800; }
+	75% 	{ fill: #AA00FF; }
+	100% 	{ fill: #AA00FF; }
+
+}
+@keyframes partyModePolygon2 {
+	0% 		{ fill: #E3C800; }
+	24.9% 	{ fill: #E3C800; }
+	25% 	{ fill: #AA00FF; }
+	49.9% 	{ fill: #AA00FF; }
+	50% 	{ fill: #FA6800; }
+	74.9% 	{ fill: #FA6800; }
+	75% 	{ fill: #A4C400; }
+	100% 	{ fill: #A4C400; }	
+	}
+@keyframes partyModePolygon3 {
+	0% 		{ fill: #FA6800; }
+	24.9% 	{ fill: #FA6800; }
+	25% 	{ fill: #A4C400; }
+	49.9% 	{ fill: #A4C400; }	
+	50% 	{ fill: #0000FF; }
+	74.9% 	{ fill: #0000FF; }
+	75% 	{ fill: rgb(250, 0, 179); }
+	100% 	{ fill: rgb(250, 0, 179); }	
+}
+@keyframes partyModePolygon4 {
+	0% 		{ fill: #0000FF; }
+	24.9% 	{ fill: #0000FF; }
+	25% 	{ fill: rgb(250, 0, 179); }
+	49.9% 	{ fill: rgb(250, 0, 179); }	
+	50% 	{ fill: #FF0000; }
+	74.9% 	{ fill: #FF0000; }
+	75% 	{ fill: #00FF00; }
+	100% 	{ fill: #00FF00; }
+}
+@keyframes partyModePolygon5 {
+	0% 		{ fill: #FF0000; }
+	24.9% 	{ fill: #FF0000; }
+	25% 	{ fill: #00FF00; }
+	49.9% 	{ fill: #00FF00; }
+	50% 	{ fill: #AA00FF; }
+	74.9% 	{ fill: #AA00FF; }
+	75% 	{ fill: #E3C800; }
+	100% 	{ fill: #E3C800; }
+	}
+@keyframes partyModePolygon6 {
+	0% 		{ fill: #AA00FF; }
+	24.9% 	{ fill: #AA00FF; }
+	25% 	{ fill: #E3C800; }
+	49.9% 	{ fill: #E3C800; }
+	50% 	{ fill: #A4C400; }
+	74.9% 	{ fill: #A4C400; }
+	75% 	{ fill: #FA6800; }
+	100% 	{ fill: #FA6800; }	
+	}
+@keyframes partyModePolygon7 {
+	0% 		{ fill: #A4C400; }
+	24.9% 	{ fill: #A4C400; }
+	25% 	{ fill: #FA6800; }
+	49.9% 	{ fill: #FA6800; }	
+	50% 	{ fill: rgb(250, 0, 179); }
+	74.9% 	{ fill: rgb(250, 0, 179); }
+	75% 	{ fill: #0000FF; }
+	100% 	{ fill: #0000FF; }	
+}
+@keyframes partyModePolygon8 {
+	0% 		{ fill: rgb(250, 0, 179); }
+	24.9% 	{ fill: rgb(250, 0, 179); }
+	25% 	{ fill: #0000FF; }
+	49.9% 	{ fill: #0000FF; }	
+	50% 	{ fill: #00FF00; }
+	74.9% 	{ fill: #00FF00; }
+	75% 	{ fill: #FF0000; }
+	100% 	{ fill: #FF0000; }
+}
+		
+@keyframes partyModeFillFade {
+	0% 		{ fill: #00FF00; }
+	10% 	{ fill: #FF0000; }
+	20%		{ fill: #E3C800; }
+	30%		{ fill: #AA00FF; }
+	40%		{ fill: #FA6800; }
+	50% 	{ fill: #A4C400; }
+	60%		{ fill: #FF00AA; }
+	70% 	{ fill: #0000FF; }
+	80%		{ fill: #AA00FF; }
+	90%		{ fill: #1BA1E2; }
+	100% 	{ fill: #00FF00; }
+}
+
+@keyframes partyModeFillJump {
+	0% 		{ fill: #00FF00; }
+	10% 	{ fill: #FF0000; }
+	20%		{ fill: #E3C800; }
+	30%		{ fill: #AA00FF; }
+	40%		{ fill: #FA6800; }
+	50% 	{ fill: #A4C400; }
+	60%		{ fill: #FF00AA; }
+	70% 	{ fill: #0000FF; }
+	80%		{ fill: #AA00FF; }
+	90%		{ fill: #1BA1E2; }
+	100% 	{ fill: #00FF00; }
+}
+	
+.door-open{fill: #ff0000 !important;stroke: #FFe57f !important;animation-name: fadeInAndOut;animation-fill-mode: forwards;animation-duration: 3s;animation-iteration-count: infinite}
+.motion-active{fill:#0000ff !important;animation-name: slightFade;animation-fill-mode: forwards;animation-duration: 3s;animation-iteration-count: infinite}
+.motion-active-fill-2{fill:#3a3a7a !important}
+.motion-active-fill{fill:#ff9900 !important}
+.motion-active-stroke{stroke:#ff9900 !important;animation-name: slightFade;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite}
+.fill-ff9900{fill:#ff9900 !important}
+
+.alert-red			{fill: #ff0000 !important;stroke: #000000 !important;animation-name: fadeInAndOut;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite}
+.active-red			{fill: #ff0000 !important;stroke: #000000 !important;animation-name: fadeInAndOut25;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite}
+.active-red-stroke	{stroke: #ff0000 !important; animation-name: fadeInAndOut25;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite}
+
+.active-yellow{fill: #ffff00 !important;stroke: #000000 !important;animation-name: fadeInAndOut25;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite}
+.active-white{fill: #ffffff !important;stroke: #000000 !important;animation-name: fadeInAndOut25;animation-fill-mode: forwards;animation-duration: 1s;animation-iteration-count: infinite}
+.active-white-slow{fill: #ffffff !important;animation-name: fadeInAndOut25;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite}
+.activeWhiteSlow{fill: #ffffff !important;animation-name: fadeInAndOut25;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite}
+.active-red-white-flash{animation-name: flashRedWhite;animation-fill-mode: forwards;animation-duration: 1s;animation-iteration-count: infinite}
+.active-blue-white-flash{animation-name: flashBlueWhite;animation-fill-mode: forwards;animation-duration: 1s;animation-iteration-count: infinite}
+.active-yellow-white-flash{animation-name: flashYellowWhite;animation-fill-mode: forwards;animation-duration: 1s;animation-iteration-count: infinite}
+
+.not-present{opacity: 0.3 !important;fill: #FF0000 !important;stroke: #FF0000 !important}
+
+.translate-hide {transform: translateY(700px) !important; }
+.translate-y-400 {transform: translateY(-400px) !important; }
+.translate-y-401 {transform: translate(10px, 10px) !important; }
+.translate-y-800 {transform: translate (0px, -800px); }
+.translate-y-1200 {transform: translate (0px, -1200px); }
+.translate-y-1600 {transform: translate (0px, -1600px); }
+.translate-y-2000 {transform: translate (0px, -2000px); }
+.translate-y-2400 {transform: translate (0px, -2400px); }
+.translate-y-2800 {transform: translate (0px, -2800px); }
+
+.opaque					{opacity: 1 !important}
+.transparent			{opacity: 0 !important}
+.transparent2			{opacity: 0 !important}
+
+.light-on				{opacity: 1 !important}
+.light-off				{opacity: 0 !important}
+
+.alternate-red-white-fill-stroke	{stroke: #ff0000 !important;	animation-name: alternateRedWhite;	animation-fill-mode: forwards;	animation-duration: 3s;	animation-iteration-count: infinite }
+.alternate-red-white-fill			{animation-name: alternateRedWhite;	animation-fill-mode: forwards;	animation-duration: 1s;	animation-iteration-count: infinite }
+
+.alternate-blue-white-fill-stroke	{stroke: #0000FF !important;	animation-name: alternateBlueWhite;	animation-fill-mode: forwards;	animation-duration: 3s;	animation-iteration-count: infinite }
+.alternate-blue-white-fill			{animation-name: alternateBlueWhite;	animation-fill-mode: forwards;	animation-duration: 1s;	animation-iteration-count: infinite }
+
+.alternate-yellow-white-fill-stroke	{stroke: rgb(255, 200, 100) !important;	animation-name: alternateYellowWhite;	animation-fill-mode: forwards;	animation-duration: 3s;	animation-iteration-count: infinite }
+.alternate-yellow-white-fill		{animation-name: alternateYellowWhite;	animation-fill-mode: forwards;	animation-duration: 3s;	animation-iteration-count: infinite }
+
+.alternate-purple-orange-fill		{animation-name: alternatePurpleOrange;	animation-fill-mode: forwards;	animation-duration: 3s;	animation-iteration-count: infinite }
+
+.fill-red				{fill: #ff0000 !important}
+.fill-red-ff			{fill: #ff0000 !important}
+.fill-red-cc			{fill: #cc0000 !important}
+.fill-red-dd			{fill: #dd0000 !important}
+.fill-red-bb			{fill: #bb0000 !important}
+.fill-red-99			{fill: #990000 !important}
+.fill-red-66			{fill: #660000 !important}
+.fill-stroke-red		{fill: #DDDDDD !important; stroke: #ff0000 !important}
+.stroke-red				{stroke: #ff0000 !important}
+.stroke-red-aa			{stroke: #aa0000 !important}
+
+.fill-blue				{fill: #0000FF !important}
+.fill-blue-ff			{fill: #0000FF !important}
+.fill-blue-dd			{fill: #0000dd !important}
+.fill-blue-cc			{fill: #0000cc !important}
+.fill-blue-bb			{fill: #0000bb !important}
+.fill-blue-99			{fill: #000099 !important}
+.fill-blue-66			{fill: #000066 !important}
+.fill-stroke-blue		{fill: #000099 !important; stroke: #0000FF !important}
+.stroke-blue			{stroke: #0000FF !important}
+
+.fill-yellow			{fill: rgb(255, 200, 100) !important}
+.fill-yellow-ff			{fill: rgb(255, 200, 100) !important}
+.fill-yellow-dd			{fill: rgb(255, 255, 100) !important}
+.fill-yellow-cc			{fill: rgb(255, 255, 100) !important}
+.fill-yellow-bb			{fill: rgb(255, 255, 100) !important}
+.fill-yellow-99			{fill: rgb(255, 255, 100) !important}
+.fill-yellow-66			{fill: rgb(255, 255, 100) !important}
+.fill-stroke-yellow		{fill: rgb(255, 255, 100) !important; stroke: #ffdd99 !important}
+.stroke-yellow			{stroke: #ffdd99 !important}
+
+.fill-green				{fill: #00FF00 !important}
+.fill-orange			{fill: #ff6600 !important;opacity: 1 !important}
+
+.fill-lcars-orange		{fill: 	#ff9900  !important;		opacity: 1 !important}
+.stroke-lcars-orange	{stroke: #ff9900  !important;	opacity: 1 !important}
+
+.fill-lcars-maroon		{fill: 	#cc6666 !important;		opacity: 1 !important}
+.stroke-lcars-maroon	{stroke: #cc6666 !important;	opacity: 1 !important}
+
+
+
+.fill-purple			{fill: #DA70D6 !important}
+.fill-pink				{fill: #ff00a2 !important}
+.fill-ltgray			{fill: #BBBBBB !important}
+.fill-gray				{fill: #888888 !important}
+.fill-dkgray			{fill: #444444 !important}
+.fill-black				{fill: #000000 !important}
+
+.fill-white				{fill: #FFFFFF !important}
+.stroke-white				{stroke: #FFFFFF !important}
+
+.fill-light-orange		{fill: #ffcc99 !important}
+
+.red-alert-bar{animation-name: redAlertBar;animation-fill-mode: forwards;animation-duration: 4s;animation-iteration-count: infinite}
+.red-alert-text{fill: #ffffff !important;stroke: #ffffff !important;animation-name: fadeInAndOut25;animation-fill-mode: forwards;animation-duration: 1s;animation-iteration-count: infinite}
+.partyModeRainbow{animation-name: partyModeRainbowAni;opacity: 1 important;animation-fill-mode: forwards;animation-duration: 5s;animation-iteration-count: infinite}
+
+.red-alert-text-white	{fill: #ffffff !important; animation-name: fadeOut25;animation-fill-mode: forwards;animation-duration: 0.8s;animation-iteration-count: infinite}
+.red-alert-text-red		{fill: #ff0000 !important;stroke: #ff0000 !important;animation-name: fadeInAndOut25;animation-fill-mode: forwards;animation-duration: 1s;animation-iteration-count: infinite}
+
+.red-alert-polygon-1A	{animation-name: redAlertPolygon1A;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.red-alert-polygon-1B	{animation-name: redAlertPolygon1B;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.red-alert-polygon-1C	{animation-name: redAlertPolygon1C;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.red-alert-polygon-1D	{animation-name: redAlertPolygon1D;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.red-alert-polygon-1E	{animation-name: redAlertPolygon1E;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.red-alert-polygon-2A	{animation-name: redAlertPolygon2A;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.red-alert-polygon-2B	{animation-name: redAlertPolygon2B;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.red-alert-polygon-2C	{animation-name: redAlertPolygon2C;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+/*
+transition-delay
+
+
+.red-alert-polygon-1A	{animation-name: alertPolygon1A;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite;}
+.red-alert-polygon-1B	{animation-name: alertPolygon1B;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite;}
+.red-alert-polygon-1C	{animation-name: alertPolygon1C;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite; }
+.red-alert-polygon-1D	{animation-name: alertPolygon1D;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite}
+.red-alert-polygon-1E	{animation-name: alertPolygon1E;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite}
+.red-alert-polygon-2A	{animation-name: alertPolygon2A;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite; will-change: opacity;}
+.red-alert-polygon-2B	{animation-name: alertPolygon2B;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite; will-change: opacity;}
+.red-alert-polygon-2C	{animation-name: alertPolygon2C;animation-fill-mode: forwards;animation-duration: 2s;animation-iteration-count: infinite; will-change: opacity;}
+*/
+/*
+.blue-alert-polygon-1A	{ animation: alertPolygon1A 2s steps(4);animation-iteration-count: infinite; will-change: opacity;}
+*/
+.blue-alert-polygon-1A	{animation-name: blueAlertPolygon1A;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.blue-alert-polygon-1B	{animation-name: blueAlertPolygon1B;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.blue-alert-polygon-1C	{animation-name: blueAlertPolygon1C;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.blue-alert-polygon-1D	{animation-name: blueAlertPolygon1D;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.blue-alert-polygon-1E	{animation-name: blueAlertPolygon1E;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.blue-alert-polygon-2A	{animation-name: blueAlertPolygon2A;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.blue-alert-polygon-2B	{animation-name: blueAlertPolygon2B;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+.blue-alert-polygon-2C	{animation-name: blueAlertPolygon2C;animation-fill-mode: forwards;animation-duration: 1.5s;animation-iteration-count: infinite}
+/*
+.blue-alert-polygon-1A	{ animation: alertPolygon1A 4s steps(5, start); animation-iteration-count: infinite;will-change: opacity;}
+.blue-alert-polygon-1B	{ animation: alertPolygon1B 4s steps(5, start); animation-iteration-count: infinite;will-change: opacity;}
+.blue-alert-polygon-1C	{ animation: alertPolygon1C 4s steps(5, start); animation-iteration-count: infinite;will-change: opacity;}
+.blue-alert-polygon-1D	{ animation: alertPolygon1D 4s steps(5, start); animation-iteration-count: infinite;will-change: opacity;}
+.blue-alert-polygon-1E	{ animation: alertPolygon1E 4s steps(5, start); animation-iteration-count: infinite;will-change: opacity;}
+.blue-alert-polygon-2A	{ animation: alertPolygon2A 2s steps(4);animation-iteration-count: infinite; will-change: opacity;}
+.blue-alert-polygon-2B	{ animation: alertPolygon2B 2s steps(4);animation-iteration-count: infinite; will-change: opacity;}
+.blue-alert-polygon-2C	{ animation: alertPolygon2C 2s steps(4);animation-iteration-count: infinite; will-change: opacity;}
+
+.blue-alert-polygon-1A	{ animation-name: alertPolygon1A;animation-fill-mode: forwards;animation-duration: 1.2s;animation-iteration-count: infinite; will-change: opacity;}
+.blue-alert-polygon-1B	{ animation-name: alertPolygon1B;animation-fill-mode: forwards;animation-duration: 1.2s;animation-iteration-count: infinite; will-change: opacity;}
+.blue-alert-polygon-1C	{ animation-name: alertPolygon1C;animation-fill-mode: forwards;animation-duration: 1.2s;animation-iteration-count: infinite; will-change: opacity;}
+.blue-alert-polygon-1D	{ animation-name: alertPolygon1D;animation-fill-mode: forwards;animation-duration: 1.2s;animation-iteration-count: infinite; will-change: opacity;}
+.blue-alert-polygon-1E	{ animation-name: alertPolygon1E;animation-fill-mode: forwards;animation-duration: 1.2s;animation-iteration-count: infinite; will-change: opacity;}
+.blue-alert-polygon-2A	{ animation-name: alertPolygon2A;animation-fill-mode: forwards;animation-duration: 1.2s;animation-iteration-count: infinite; will-change: opacity;}
+.blue-alert-polygon-2B	{ animation-name: alertPolygon2B;animation-fill-mode: forwards;animation-duration: 1.2s;animation-iteration-count: infinite; will-change: opacity;}
+.blue-alert-polygon-2C	{ animation-name: alertPolygon2C;animation-fill-mode: forwards;animation-duration: 1.2s;animation-iteration-count: infinite; will-change: opacity;}
+*/
+
+.yellow-alert-polygon { fill: rgb(255, 220, 100) !important; }
+/*
+.yellow-alert-polygon-1A { animation-name: yellowAlertPolygon1A;animation-fill-mode: forwards;animation-duration: 0.5s;animation-iteration-count: infinite}
+.yellow-alert-polygon-1B{animation-name: yellowAlertPolygon1B;animation-fill-mode: forwards;animation-duration: 1s;animation-iteration-count: infinite}
+.yellow-alert-polygon-1C{animation-name: yellowAlertPolygon1C;animation-fill-mode: forwards;animation-duration: 1s;animation-iteration-count: infinite}
+.yellow-alert-polygon-1D{animation-name: yellowAlertPolygon1D;animation-fill-mode: forwards;animation-duration: 1s;animation-iteration-count: infinite}
+.yellow-alert-polygon-1E{animation-name: yellowAlertPolygon1E;animation-fill-mode: forwards;animation-duration: 1s;animation-iteration-count: infinite}
+.yellow-alert-polygon-2A{animation-name: yellowAlertPolygon2A;animation-fill-mode: forwards;animation-duration: 1s;animation-iteration-count: infinite}
+.yellow-alert-polygon-2B{animation-name: yellowAlertPolygon2B;animation-fill-mode: forwards;animation-duration: 1s;animation-iteration-count: infinite}
+.yellow-alert-polygon-2C{animation-name: yellowAlertPolygon2C;animation-fill-mode: forwards;animation-duration: 1s;animation-iteration-count: infinite}
+*/
+
+.party-mode-polygon-1	{ animation-name: partyModePolygon1;	animation-fill-mode: forwards;	animation-duration: 1s;	animation-iteration-count: infinite; }
+.party-mode-polygon-2	{ animation-name: partyModePolygon2;	animation-fill-mode: forwards;	animation-duration: 1s;	animation-iteration-count: infinite; }
+.party-mode-polygon-3	{ animation-name: partyModePolygon3;	animation-fill-mode: forwards;	animation-duration: 1s;	animation-iteration-count: infinite; }
+.party-mode-polygon-4	{ animation-name: partyModePolygon4;	animation-fill-mode: forwards;	animation-duration: 1s;	animation-iteration-count: infinite; }
+.party-mode-polygon-5	{ animation-name: partyModePolygon5;	animation-fill-mode: forwards;	animation-duration: 1s;	animation-iteration-count: infinite; }
+.party-mode-polygon-6	{ animation-name: partyModePolygon6;	animation-fill-mode: forwards;	animation-duration: 1s;	animation-iteration-count: infinite; }
+.party-mode-polygon-7	{ animation-name: partyModePolygon7;	animation-fill-mode: forwards;	animation-duration: 1s;	animation-iteration-count: infinite; }
+.party-mode-polygon-8	{ animation-name: partyModePolygon8;	animation-fill-mode: forwards;	animation-duration: 1s;	animation-iteration-count: infinite; }
+.party-mode-fill-fade	{ animation-name: partyModeFillFade;	animation-fill-mode: forwards;	animation-duration: 4s;	animation-iteration-count: infinite; opacity: 1 !important; }
+.party-mode-fill-jump	{ animation-name: partyModeFillJump;	animation-fill-mode: forwards;	animation-duration: 2s;	animation-iteration-count: infinite; opacity: 1 !important; }
+
+
+.maximize-tablet		{ position: static;	bottom:0; left:0;	width: 242; height:148;	}
+/*.maximize-tablet-test		{ position: fixed;	top: 0;	left: 0;	width: 950px; height:560px;	x:0; } */
