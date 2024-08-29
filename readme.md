@@ -1,3 +1,9 @@
+Update August 2024: I switched to Home Assistant last year and just got around to porting this to HA-Floorplan, which served as the original inspiration for openHAB's HABPanel SVG floorplans.
+
+
+
+THe below descriptions are for the legacy openHAB version which I'm no longer updating.
+
 These are template SVG files for use with openHAB's HABPanel interface. They are designed from a 2370's era Star Trek LCARS design aesthetic.
 
 They are still very much a work in progress. I'm making them available now upon request.
